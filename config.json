@@ -1,0 +1,17 @@
+{
+  "httpPort": 5488,
+  "logger": {
+    "console": { "transport": "console", "level": "debug" }
+  },
+  "extensions": {
+    "chrome-pdf": {
+      "numberOfWorkers": 3,
+      "launchOptions": {
+        "executablePath": "/usr/bin/google-chrome",
+        "args": [
+          "--no-sandbox"
+        ]
+      }
+    }
+  }
+}
