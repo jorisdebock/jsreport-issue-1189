@@ -19,7 +19,7 @@ ARG GOOGLE_CHROME_VERSION=130.0.6723.116
 # (because) cannot read properties of undefined (reading 'object')
 # TypeError: Cannot read properties of undefined (reading 'object')
 #   at mergeStructTree (/src/node_modules/@jsreport/pdfjs/lib/mixins/utils/unionGlobalObjects.js:125:63)
-# ARG GOOGLE_CHROME_VERSION=131.0.6778.69
+ARG GOOGLE_CHROME_VERSION=131.0.6778.69
 ARG CHROME_URL=https://dl.google.com/linux/chrome/rpm/stable/x86_64/google-chrome-stable-${GOOGLE_CHROME_VERSION}-1.x86_64.rpm
 
 RUN dnf config-manager --add-repo https://vault.centos.org/centos/8/BaseOS/x86_64/os && \
